@@ -11,6 +11,7 @@
  /* centralizando a div */
     margin: 0 auto;
     position: relative;
+    overflow: hidden; /* para tudo que sair da tela do "bloco" não aparecer mais */
 }
 
 .pipe{
@@ -19,4 +20,15 @@
     position: absolute;
     bottom: 0;
     width: 80px;
+    animation: pipe-animation 2s infinite;
+}
+/* criando animação do tubo utilizando keyframes */
+@keyframes pipe-animation{
+    from{ 
+        right: 0;
+    }
+
+    to{
+    right: 100%;
+    }
 }
