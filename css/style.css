@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,4 +6,17 @@
 
 .game-board {
     width:  80%;
+    height: 500px;
+    border: 1px solid #333; 
+ /* centralizando a div */
+    margin: 0 auto;
+    position: relative;
+}
+
+.pipe{
+    /*
+    todas imagens com position abosulute para que nenhuma interfira no comportamento da outra */
+    position: absolute;
+    bottom: 0;
+    width: 80px;
 }
