@@ -1,3 +1,6 @@
+
+
+
 const mario = document.querySelector('.mario');// selecionando  a classe do mario
 
 const jump = () => { 
@@ -34,3 +37,5 @@ const loop = setInterval(() => {
 
 }, 10)
 
+
+document.addEventListener('keydown', jump);
